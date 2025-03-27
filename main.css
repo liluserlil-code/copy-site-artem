@@ -1,0 +1,183 @@
+/* Основные стили для контейнеров */
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.main-content {
+    width: 650px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 930px) {
+    .main-content {
+        width: 70%;
+    }
+}
+
+.ramadan{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 32px;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
+}
+
+.main-content-label, .main-content-container-label{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 21px;
+}
+
+
+.body-banner {
+    max-width: 100%;
+	object-fit: cover;
+}
+
+.main-content-container {
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.option-container{
+    display: flex;
+    padding: 32px 16px;
+    justify-content: center;
+    gap: 1 rem;
+    flex-wrap: wrap;
+}
+
+
+.option {
+    display: flex;
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.705);
+    /* background-color: transparent; */
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+
+    flex-direction: column; /* вот над этим долго страдал аххахахах */
+
+}
+
+.option strong {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    color: rgb(48, 48, 48);
+}
+
+.option .red {
+    color: rgb(255, 48, 48);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.option .sub {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.option input[type='radio'] {
+    display: none;
+    margin: 0;
+}
+
+.option .radio-icon {
+	font-size: 1.8rem;
+	margin-top: 1rem;
+}
+
+
+
+
+
+/* Стили для options-container и option (если нужно) */
+/* .options-container {
+    padding: 32px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.option {
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+    max-width: 133px;
+} */
+
+.option:hover {
+    border-color: #a18cd1; /* Цвет при наведении */
+}
+
+
+/* Адаптивные стили
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0 10px;
+    }
+    
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .option {
+        min-width: 80%;
+    }
+    
+    .main-content-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h4 {
+        font-size: 1.1em;
+    }
+    
+    .option {
+        min-width: 90%;
+        padding: 10px;
+    }
+} */
+
